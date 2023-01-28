@@ -2,14 +2,12 @@
 <p>
   Deploy: <a href="https://tertiomodo.github.io/krayt-test-task">GitHub pages</a>
 </p>
-<hr>
 <h2>Используемые технологии</h2>
 <ul>
   <li>HTML</li>
   <li>CSS/SCSS</li>
   <li>JavaScript</li>
 </ul>
-<hr>
 <h2>Взаимодействие с UI элементами</h2>
 <span>Раскрыть карточку можно нажатием на</span>
 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
