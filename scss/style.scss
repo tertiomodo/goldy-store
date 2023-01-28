@@ -1,0 +1,61 @@
+@import 'colors';
+@import 'fonts';
+@import 'extends';
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.body {
+  min-width: 320px;
+  font-family: 'Inter';
+  background-color: $white;
+  color: $dark-gray;
+}
+
+@import 'components/header';
+@import 'components/hero';
+@import 'components/popular';
+@import 'components/sale';
+@import 'components/best';
+// Articles ------------------------
+.articles__title {
+  @extend %section-title;
+}
+
+.articles__read-btn {
+  margin-top: 20px;
+}
+
+.articles__read-btn-text {
+  margin-right: 7px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+}
+
+.articles__arrow-svg path {
+  fill: $black;
+  transition: fill 0.2s ease-in-out;
+}
+
+.articles__arrow-svg {
+  transform: translateX(0);
+  transition: transform 0.1s ease-in-out;
+}
+
+.articles__read-btn:hover .articles__read-btn-text {
+  color: $space-gray;
+}
+
+.articles__read-btn:hover .articles__arrow-svg path {
+  fill: $space-gray;
+}
+
+.articles__read-btn:active .articles__arrow-svg {
+  transform: translateX(8px);
+}
+
+// Media ----------------------------------------------
+@import 'media';
