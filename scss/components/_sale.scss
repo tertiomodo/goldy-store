@@ -1,11 +1,11 @@
 .sale {
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 10px;
   margin-bottom: 120px;
 }
 
 .sale__title {
   @extend %section-title;
-  margin: 0 0 24px -5px;
+  margin-bottom: 24px;
 }
 
 .sale__top-row {
@@ -52,7 +52,6 @@
   max-width: 310px;
   min-height: 370px;
   position: relative;
-  margin-right: 10px;
   padding: 15px 21px 24px 24px;
   cursor: pointer;
 }
@@ -171,8 +170,8 @@
   content: '-45%';
   position: absolute;
   padding: 4px 8px;
-  right: -179px;
-  bottom: 1px;
+  right: -183px;
+  bottom: 0;
   font-weight: 500;
   font-size: 13px;
   line-height: 100%;
@@ -254,6 +253,11 @@
 
 .sale__rings-row {
   margin-bottom: 120px;
+  gap: 5px;
+}
+
+.sale__banners-row {
+  gap: 5px;
 }
 
 .sale__banner {
@@ -261,7 +265,6 @@
   min-height: 290px;
   position: relative;
   padding: 0;
-  margin-right: 5px;
   background-color: $snow-gray;
   cursor: pointer;
 }
@@ -285,7 +288,7 @@
 
 .sale__banner-descr {
   max-width: 222px;
-  padding: 72px 0 0 21px;
+  padding: 72px 0 0 27px;
   font-weight: 600;
   font-size: 20px;
   line-height: 160%;
@@ -314,7 +317,8 @@
 }
 
 .sale__banner-sale-text {
-  margin-right: 13px;
+  display: inline-block;
+  margin: 0 14px 0 4px;
   font-weight: 600;
   font-size: 24px;
   color: $white;
@@ -330,7 +334,7 @@
   width: 100%;
   max-width: 124px;
   min-height: 283px;
-  margin-right: 23px;
+  margin-right: 18px;
   z-index: 2;
   flex-shrink: 0;
   background: url('../assets/img/sale-first-banner.png') no-repeat right top / contain;
@@ -351,5 +355,5 @@
   min-height: 283px;
   z-index: 2;
   flex-shrink: 0;
-  background: url('../assets/img/sale-third-banner.png') no-repeat right 15px bottom/contain;
+  background: url('../assets/img/sale-third-banner.png') no-repeat right 21px bottom/contain;
 }

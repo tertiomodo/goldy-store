@@ -1,5 +1,6 @@
 .best {
   margin-bottom: 126px;
+  padding: 0 10px 0 10px;
 }
 
 .best__title {
@@ -167,7 +168,7 @@
 }
 
 .best__right-main {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .best__right-colors-wrapper {
@@ -176,7 +177,7 @@
 
 .best__right-main-title {
   display: inline-block;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   font-weight: 600;
   font-size: 12px;
   line-height: 100%;
@@ -233,10 +234,6 @@
 
 .fourth-color {
   background-color: $lime;
-}
-
-.best__right-sizes-wrapper {
-  margin-bottom: 14px;
 }
 
 .best__sizes-tooltip {
