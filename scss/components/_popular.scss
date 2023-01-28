@@ -1,18 +1,21 @@
 .popular {
   margin-bottom: 120px;
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 10px;
 }
 
 .popular__title {
-  margin: 0 0 39px -6px;
+  margin-bottom: 39px;
   @extend %section-title;
+}
+
+.popular__card-row {
+  gap: 5px;
 }
 
 .popular__card {
   max-width: 200px;
   min-height: 259px;
   position: relative;
-  margin-right: 10px;
   padding: 10px;
   background-color: $snow-gray;
 }

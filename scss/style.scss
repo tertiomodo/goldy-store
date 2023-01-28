@@ -19,6 +19,10 @@
 @import 'components/sale';
 @import 'components/best';
 // Articles ------------------------
+.articles {
+  padding: 0 10px 0 10px;
+}
+
 .articles__title {
   @extend %section-title;
 }
@@ -55,6 +59,62 @@
 
 .articles__read-btn:active .articles__arrow-svg {
   transform: translateX(8px);
+}
+
+.articles__row {
+  gap: 5px;
+}
+
+.articles__row-title {
+  margin-bottom: 36px;
+}
+
+.articles__card {
+  width: 100%;
+  max-width: 310px;
+  min-height: 475px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.articles__card-img {
+  width: 100%;
+  height: 381px;
+  margin-bottom: 20px;
+}
+
+.articles-first {
+  background: url('../assets/img/articles-first.jpg') no-repeat center center / cover;
+}
+
+.articles-second {
+  background: url('../assets/img/articles-second.jpg') no-repeat center center / cover;
+}
+
+.articles-third {
+  background: url('../assets/img/articles-third.jpg') no-repeat center center / cover;
+}
+
+.articles-fourth {
+  background: url('../assets/img/articles-fourth.jpg') no-repeat center center / cover;
+}
+
+.articles__card-date {
+  display: block;
+}
+
+.articles__card-date {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 100%;
+  color: $middle-gray;
+}
+
+.articles__card-descr {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 100%;
+  color: $dark-gray;
 }
 
 // Media ----------------------------------------------
