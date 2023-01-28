@@ -1,0 +1,107 @@
+.hero {
+  margin-bottom: 120px;
+  padding: 0 10px 0 10px;
+}
+
+.hero__row {
+  position: relative;
+  background-color: $snow-gray;
+}
+
+.hero__left {
+  width: 100%;
+  max-width: 723px;
+  min-height: 561px;
+  font-family: 'Prata';
+  background: url('../assets/img/hero-left-bg.png') no-repeat left bottom / contain;
+}
+
+.hero__content {
+  padding-left: 19px;
+}
+
+.hero__sale {
+  margin: 9px 0 31px 0;
+  font-size: 23.4px;
+  line-height: 100%;
+  letter-spacing: -2px;
+}
+
+.hero__title {
+  margin-bottom: 52px;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: -1.6px;
+}
+
+.hero__btn {
+  width: 100%;
+  max-width: 200px;
+  min-height: 54px;
+  margin-bottom: 13px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background: $dark-gray;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero__btn:hover {
+  background: $gray;
+}
+
+.hero__btn:active {
+  background: $black;
+}
+
+.hero__right {
+  width: 100%;
+  max-width: 548px;
+  min-height: 548px;
+  position: relative;
+  right: 7px;
+  top: 6px;
+  background: url('../assets/img/hero-bg.png') no-repeat right center / contain;
+}
+
+.pagination {
+  @extend %pagination;
+  bottom: 25px;
+  margin-left: 2px;
+}
+
+.hero__arrows {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 253px;
+  padding: 0 24px;
+}
+
+.left-arrow {
+  rotate: 180deg;
+}
+
+.arrow circle {
+  stroke: $dark-gray;
+  fill: transparent;
+  transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
+}
+
+.arrow path {
+  fill: $black;
+  transform: translateX(0px);
+  transition: transform 0.1s ease-in-out;
+}
+
+.button-arrow:hover .arrow circle {
+  fill: $snow-gray;
+}
+
+.button-arrow:active .arrow path {
+  transform: translateX(8px);
+}

@@ -1,0 +1,99 @@
+%choice {
+  .choices {
+    margin-top: 13px;
+    font-size: 14px;
+  }
+  
+  .choices__inner {
+    width: 197px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+    background-color: transparent;
+  }
+  
+  .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+    padding: 0;
+  }
+  
+  .choices__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .choices__list--dropdown, .choices__list[aria-expanded] {
+    padding: 24px 28px 22px 24px;
+    background-color: $white;
+    border: none;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .choices[data-type*=select-one]::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    background: url('../assets/svg/arrow.svg') no-repeat right center / contain;
+    border-style: none;
+  }
+  
+  .choices[data-type*=select-one].is-open::after {
+    margin-top: 0;
+    top: 40%;
+    transform: rotate(180deg);
+  }
+
+  .is-selected::before {
+    content: '';
+    width: 11px;
+    height: 8px;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    background: url('../assets/svg/check.svg') no-repeat right center / cover;
+  }
+}
+
+%section-title {
+  margin-bottom: 0;
+  font-family: 'Prata';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: $dark-gray;
+}
+
+%default-link {
+  color: $dark-gray;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: $silver-gray;
+  }
+
+  &:active {
+    color: $gold;
+  }
+}
+
+%pagination {
+  position: absolute;
+
+  .bullet {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid $dark-gray;
+    border-radius: 100%;
+  }
+  
+  .bullet:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .bullet--active {
+    background-color: $dark-gray;
+  }
+}
