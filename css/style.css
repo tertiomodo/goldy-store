@@ -516,6 +516,11 @@
   position: relative;
   padding: 10px;
   background-color: #F8F8F8;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.popular__card:hover {
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
 }
 
 .popular__сategories {
@@ -614,6 +619,12 @@
   margin-right: 4px;
 }
 
+.sale__rings-row {
+  margin-bottom: 120px;
+  justify-content: space-between;
+  gap: 5px;
+}
+
 .sale__card {
   width: 100%;
   max-width: 310px;
@@ -643,6 +654,7 @@
   left: 0;
   z-index: -1;
   border-bottom: none;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
 }
 
 .sale__card-top {
@@ -771,6 +783,7 @@
   visibility: hidden;
   padding: 0 24px 20px;
   z-index: 3;
+  background-color: #FFFFFF;
 }
 .sale__card-selects .choices {
   margin-bottom: 0;
@@ -807,12 +820,7 @@
 .selects--active {
   display: block;
   visibility: visible;
-}
-
-.sale__rings-row {
-  margin-bottom: 120px;
-  justify-content: space-between;
-  gap: 5px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
 }
 
 .sale__banners-row {
@@ -827,6 +835,11 @@
   padding: 0;
   background-color: #F8F8F8;
   cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.sale__banner:hover {
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
 }
 
 .sale__banner::after {
@@ -1375,6 +1388,11 @@
   min-height: 475px;
   padding: 0;
   cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.articles__card:hover {
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
 }
 
 .articles__card-img {
