@@ -48,9 +48,9 @@
 }
 
 .best__left-img {
-  width: 89%;
-  height: 100%;
-  background: url('../assets/img/best-bg.png') no-repeat top 6px right 19px / contain;
+  width: 86%;
+  height: 102%;
+  background: url(../assets/img/best-bg.png) no-repeat top 50% right 50%/contain;
 }
 
 .best__left-arrows {
@@ -125,7 +125,7 @@
   content: "-45%";
   position: absolute;
   padding: 4px 8px;
-  right: 408px;
+  left: 192px;
   bottom: 31px;
   font-weight: 500;
   font-size: 13px;
@@ -147,7 +147,7 @@
   padding: 12px 14px;
   position: absolute;
   top: -33px;
-  right: 148px;
+  left: 278px;
   background-color: $snow-gray;
 }
 
@@ -297,6 +297,9 @@
 
 .best__right-sizes {
   max-width: 572px;
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .best__right-size {
