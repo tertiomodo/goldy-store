@@ -194,7 +194,11 @@
   right: 36.5px;
 }
 
-.burger-select {
+.burger-select-item {
+  display: none;
+}
+
+.number-link-item {
   display: none;
 }
 
@@ -469,7 +473,7 @@
 }
 
 .left-arrow {
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 
 .arrow circle {
@@ -1508,11 +1512,11 @@
   .header-bottom {
     padding: 10px;
   }
-  .burger-select {
+  .burger-select-item,
+  .number-link-item {
     display: block;
   }
   .burger-number-link {
-    display: flex;
     margin: 0;
   }
   .burger {
