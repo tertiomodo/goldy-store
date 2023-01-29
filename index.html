@@ -17,9 +17,9 @@
     <div class="container-fluid container-limit">
       <div class="header-top row">
         <div class="col-lg-12 d-flex justify-content-between align-items-center">
-          <div class="header-top__left d-flex justify-content-between">
+          <div class="header-top__left">
             <div class="header-top__select-block d-flex align-items-center">
-              <select class="select header-top__select">
+              <select class="select">
                 <option>Санкт-Петербург</option>
                 <option>Москва</option>
                 <option>Нижний Новгород</option>
@@ -30,7 +30,7 @@
               <svg class="phone-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.5645 11.7424L13.3317 9.50954C12.5342 8.71209 11.1786 9.0311 10.8596 10.0678C10.6204 10.7855 9.82292 11.1842 9.10522 11.0247C7.51033 10.626 5.35723 8.5526 4.9585 6.87797C4.71927 6.16024 5.19774 5.36279 5.91544 5.12359C6.95212 4.80461 7.2711 3.44895 6.47365 2.65151L4.2408 0.418659C3.60285 -0.139553 2.64591 -0.139553 2.0877 0.418659L0.572553 1.93381C-0.942594 3.5287 0.732042 7.75516 4.48004 11.5032C8.22803 15.2511 12.4545 17.0056 14.0494 15.4106L15.5645 13.8955C16.1228 13.2575 16.1228 12.3006 15.5645 11.7424Z" fill="#303030"/>
               </svg>
-              <span class="header-top__number">8 800 785-25-35</span>
+              <span>8 800 785-25-35</span>
             </a>
           </div>
           <a href="#">
@@ -69,30 +69,57 @@
       </div>
       <div class="header-bottom row">
         <div class="col-lg-12 d-flex justify-content-between align-items-center">
+          <div class="burger">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </div>
           <nav class="header-bottom__nav">
-            <ul class="nav-list d-flex justify-content-between align-items-center">
+            <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="#">Каталог</a>
+                <a class="nav-link" href="#popular">Каталог</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Акции</a>
+                <a class="nav-link" href="#sale">Акции</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Бренды</a>
+                <a class="nav-link" href="#best">Бренды</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Магазины</a>
+                <a class="nav-link" href="#about">Магазины</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">О нас</a>
+                <a class="nav-link" href="#about">О нас</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Доставка и оплата</a>
+                <a class="nav-link" href="#delivery">Доставка и оплата</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Статьи</a>
+                <a class="nav-link" href="#articles">Статьи</a>
+              </li>
+              <li class="nav-item">
+                <div class="burger-select">
+                  <select class="select">
+                    <option>Санкт-Петербург</option>
+                    <option>Москва</option>
+                    <option>Нижний Новгород</option>
+                    <option>Ростов-на-Дону</option>
+                  </select>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="burger-number-link" href="tel:+78007852535">
+                  <svg class="phone-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5645 11.7424L13.3317 9.50954C12.5342 8.71209 11.1786 9.0311 10.8596 10.0678C10.6204 10.7855 9.82292 11.1842 9.10522 11.0247C7.51033 10.626 5.35723 8.5526 4.9585 6.87797C4.71927 6.16024 5.19774 5.36279 5.91544 5.12359C6.95212 4.80461 7.2711 3.44895 6.47365 2.65151L4.2408 0.418659C3.60285 -0.139553 2.64591 -0.139553 2.0877 0.418659L0.572553 1.93381C-0.942594 3.5287 0.732042 7.75516 4.48004 11.5032C8.22803 15.2511 12.4545 17.0056 14.0494 15.4106L15.5645 13.8955C16.1228 13.2575 16.1228 12.3006 15.5645 11.7424Z" fill="#303030"/>
+                  </svg>
+                  <span class="burger-number">8 800 785-25-35</span>
+                </a>
               </li>
             </ul>
+            <div class="burger-cross">
+              <div class="cross-line"></div>
+              <div class="cross-line"></div>
+            </div>
           </nav>
           <div class="header-bottom__search d-flex align-items-center">
             <button class="header-button">
@@ -112,17 +139,17 @@
   <!-- Main start -->
   <main class="main">
     <!-- Hero start -->
-    <section class="hero">
+    <section class="hero" id="about">
       <div class="container-fluid container-limit">
         <div class="row hero__row">
-          <div class="col-xxl-6 d-flex justify-content-center align-items-center hero__left">
+          <div class="col-xxl-6 col-sm-12 d-flex justify-content-center align-items-center hero__left">
             <div class="hero__content">
               <p class="hero__sale">Суперскидка до 60%</p>
               <h1 class="hero__title">НА БРИЛЛИАНТЫ</h1>
               <button class="hero__btn">Подробнее</button>
             </div>
           </div>
-          <div class="col-xxl-6 hero__right"></div>
+          <div class="col-xxl-6 col-sm-12 hero__right"></div>
           <div class="col-lg-12 hero__arrows">
             <button class="button-arrow">
               <svg class="left-arrow arrow" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,35 +174,35 @@
     </section>
     <!-- Hero end -->
     <!-- Popular start -->
-    <section class="popular">
+    <section class="popular" id="popular">
       <div class="container-fluid container-limit">
         <div class="row">
           <div class="col-lg-12">
             <h2 class="popular__title">Популярные категории</h2>
           </div>
         </div>
-        <div class="row d-flex justify-content-between popular__card-row">
-          <div class="col-lg-2 col-sm-6 col-12 d-flex flex-column justify-content-between align-items-center popular__card">
+        <div class="row d-flex popular__card-row">
+          <div class="col-lg-2 col-sm-12 d-flex flex-column justify-content-between align-items-center popular__card">
             <div class="popular__product popular-rings"></div>
             <a class="popular__сategories" href="#">Кольца</a>
           </div>
-          <div class="col-lg-2 col-sm-6 col-12 d-flex flex-column justify-content-between align-items-center popular__card">
+          <div class="col-lg-2 col-sm-12 d-flex flex-column justify-content-between align-items-center popular__card">
             <div class="popular__product popular-earrings"></div>
             <a class="popular__сategories" href="#">Серьги</a>
           </div>
-          <div class="col-lg-2 col-sm-6 col-12 d-flex flex-column justify-content-between align-items-center popular__card">
+          <div class="col-lg-2 col-sm-12 d-flex flex-column justify-content-between align-items-center popular__card">
             <div class="popular__product popular-wedding-rings"></div>
             <a class="popular__сategories" href="#">Помолвочные<br>кольца</a>
           </div>
-          <div class="col-lg-2 col-sm-6 col-12 d-flex flex-column justify-content-between align-items-center popular__card">
+          <div class="col-lg-2 col-sm-12 d-flex flex-column justify-content-between align-items-center popular__card">
             <div class="popular__product popular-bracelet"></div>
             <a class="popular__сategories" href="#">Браслеты</a>
           </div>
-          <div class="col-lg-2 col-sm-6 col-12 d-flex flex-column justify-content-between align-items-center popular__card">
+          <div class="col-lg-2 col-sm-12 d-flex flex-column justify-content-between align-items-center popular__card">
             <div class="popular__product popular-pedant"></div>
             <a class="popular__сategories" href="#">Колье и подвески</a>
           </div>
-          <div class="col-lg-2 col-sm-6 col-12 d-flex flex-column justify-content-between align-items-center popular__card">
+          <div class="col-lg-2 col-sm-12 d-flex flex-column justify-content-between align-items-center popular__card">
             <div class="popular__product popular-watches"></div>
             <a class="popular__сategories" href="#">Часы</a>
           </div>
@@ -184,7 +211,7 @@
     </section>
     <!-- Popular end -->
     <!-- Sale start -->
-    <section class="sale">
+    <section class="sale" id="sale">
       <div class="container-fluid container-limit">
         <div class="row">
           <div class="col-lg-12">
@@ -215,7 +242,7 @@
             </div>
           </div>
         </div>
-        <div class="row d-flex justify-content-between sale__rings-row">
+        <div class="row d-flex sale__rings-row">
           <div class="col-lg-3 sale__card">
             <div class="sale__card-top first-ring">
               <div class="d-flex justify-content-between sale__card-header">
@@ -397,8 +424,8 @@
             </div>
           </div>
         </div>
-        <div class="row d-flex justify-content-between align-items-center sale__banners-row">
-          <div class="col-lg-5 col-xl-4 d-flex justify-content-between sale__banner">
+        <div class="row d-flex align-items-center sale__banners-row" id="delivery">
+          <div class="col-xl-4 col-lg-5 d-flex justify-content-between sale__banner">
             <div class="sale__banner-left">
               <p class="sale__banner-descr">
                 Скидки на&nbsp;все&nbsp;украшения с бриллиантами
@@ -409,7 +436,7 @@
             </div>
             <div class="sale__banner-right first-banner-img"></div>
           </div>
-          <div class="col-lg-5 col-xl-4 d-flex justify-content-between sale__banner">
+          <div class="col-xl-4 col-lg-5 d-flex justify-content-between sale__banner">
             <div class="sale__banner-left">
               <p class="sale__banner-descr">
                 Скидки на&nbsp;кольца и&nbsp;браслеты
@@ -420,7 +447,7 @@
             </div>
             <div class="sale__banner-right second-banner-img"></div>
           </div>
-          <div class="col-lg-5 col-xl-4 d-flex justify-content-between sale__banner">
+          <div class="col-xl-4 col-lg-5 d-flex justify-content-between sale__banner">
             <div class="sale__banner-left">
               <p class="sale__banner-descr">
                 снижение цен на&nbsp;обручальные кольца
@@ -436,7 +463,7 @@
     </section>
     <!-- Sale end -->
     <!-- Best start -->
-    <section class="best">
+    <section class="best" id="best">
       <div class="container-fluid container-limit">
         <div class="row best__row-title">
           <div class="col-lg-12 d-flex justify-content-between">
@@ -549,7 +576,7 @@
                     <div class="tooltip-tringle"></div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center best__right-sizes">
+                <div class="d-flex align-items-center best__right-sizes">
                   <button class="best__right-size">16,5</button>
                   <button class="best__right-size">17,5</button>
                   <button class="best__right-size">18,5</button>
@@ -598,7 +625,7 @@
   </main>
   <!-- Main end -->
   <!-- Articles / Footer start -->
-  <footer class="articles">
+  <footer class="articles" id="articles">
     <div class="container-fluid container-limit">
       <div class="row articles__row-title">
         <div class="col-lg-12 d-flex justify-content-between">
@@ -611,7 +638,7 @@
           </button>
         </div>
       </div>
-      <div class="row d-flex justify-content-between articles__row">
+      <div class="row d-flex articles__row">
         <div class="col-lg-3 articles__card">
           <div class="articles__card-img articles-first"></div>
           <span class="articles__card-date">21 сентября 2021</span>

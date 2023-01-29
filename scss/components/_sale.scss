@@ -253,11 +253,13 @@
 
 .sale__rings-row {
   margin-bottom: 120px;
+  justify-content: space-between;
   gap: 5px;
 }
 
 .sale__banners-row {
-  gap: 5px;
+  gap: 10px;
+  justify-content: space-between;
 }
 
 .sale__banner {
@@ -336,24 +338,24 @@
   min-height: 283px;
   margin-right: 18px;
   z-index: 2;
-  flex-shrink: 0;
   background: url('../assets/img/sale-first-banner.png') no-repeat right top / contain;
 }
 
 .second-banner-img {
   width: 100%;
-  max-width: 197px;
+  max-width: 229px;
   min-height: 283px;
   z-index: 2;
-  flex-shrink: 0;
-  background: url('../assets/img/sale-second-banner.png') no-repeat right bottom / cover;
+  background: url('../assets/img/sale-second-banner.png') no-repeat right bottom / contain;
 }
 
 .third-banner-img {
   width: 100%;
-  max-width: 223px;
+  max-width: 221px;
   min-height: 283px;
+  position: absolute;
+  top: 8px;
+  right: 0px;
   z-index: 2;
-  flex-shrink: 0;
-  background: url('../assets/img/sale-third-banner.png') no-repeat right 21px bottom/contain;
+  background: url(../assets/img/sale-third-banner.png) no-repeat right bottom/contain;
 }

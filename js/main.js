@@ -22,3 +22,26 @@ btnMore.forEach(element => {
     targetSelect.classList.toggle('selects--active');
   });
 });
+
+// Burger menu
+const burger = document.querySelector('.burger');
+const cross = document.querySelector('.burger-cross');
+const nav = document.querySelector('.header-bottom__nav');
+const navLink = document.querySelectorAll('.nav-link');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('nav--active');
+  document.body.classList.toggle('stop-scroll');
+});
+
+cross.addEventListener('click', () => {
+  nav.classList.remove('nav--active');
+  document.body.classList.remove('stop-scroll');
+});
+
+navLink.forEach(e => {
+  e.addEventListener('click', () => {
+    nav.classList.remove('nav--active');
+    document.body.classList.remove('stop-scroll');
+  });
+});
