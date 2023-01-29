@@ -38,6 +38,10 @@
   .hero__left {
     max-width: 648px;
   }
+
+  .popular__card-row {
+    justify-content: flex-start;
+  } 
 }
 
 @media (max-width: 1150px) {
@@ -234,6 +238,12 @@
   }
 }
 
+@media (max-width: 849px) {
+  .popular__card-row {
+    justify-content: center;
+  } 
+}
+
 @media (max-width: 735px) {
   .hero__row {
     flex-direction: column-reverse;
@@ -312,10 +322,6 @@
 
   .hero__title {
     font-size: 22px;
-  }
-
-  .popular__card-row {
-    justify-content: center;
   }
 
   .popular__card {
