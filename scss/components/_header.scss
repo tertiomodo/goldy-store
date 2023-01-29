@@ -18,9 +18,12 @@
 .header-top__left {
   width: 100%;
   max-width: 361px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.header-top__select-block {
+.header-top__select-block,
+.burger-select {
   @extend %choice;
 
   & .choices::before {
@@ -42,7 +45,12 @@
   }
 }
 
-.header-top__number-link {
+.burger-select {
+  display: none;
+}
+
+.header-top__number-link,
+.burger-number-link {
   width: 100%;
   max-width: 145px;
   margin: 13px 0 0 23px;
@@ -144,7 +152,16 @@
   stroke: $gold;
 }
 
+.burger {
+  display: none;
+}
+
+.burger-cross {
+  display: none;
+}
+
 .header-bottom {
+  position: relative;
   background-color: $snow-gray;
 }
 
@@ -155,6 +172,9 @@
 }
 
 .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 }

@@ -63,6 +63,11 @@
   font-size: 40px;
   line-height: 100%;
   color: $dark-gray;
+  @media (max-width: 645px) {
+    & {
+      font-size: 25px;
+    }
+  }
 }
 
 %default-link {
