@@ -1,6 +1,6 @@
 <h1>Тестовое задание компани "Крайт"<br>Goldy Store - Ювелирный магазин</h1>
 <p>
-  Deploy: <a href="https://tertiomodo.github.io/krayt-test-task">GitHub pages</a>
+  Deploy: <a href="https://tertiomodo.github.io/goldy-store">GitHub pages</a>
 </p>
 <h2>Используемые технологии</h2>
 <ul>
